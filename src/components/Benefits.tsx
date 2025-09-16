@@ -15,7 +15,19 @@ export default function Benefits() {
           {/* Real-Time Expense Verification */}
           <div className="relative group">
             <div className="absolute inset-0 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden">
+            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+            style={{
+                width: "385px",
+                height: "510px",
+                paddingLeft: "40px",
+                paddingRight: "40px",
+                paddingBottom: "104px",
+                mixBlendMode: "screen",
+                backgroundImage: "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-1.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               
 
               {/* Icon */}
@@ -41,7 +53,19 @@ export default function Benefits() {
           {/* Audit-Ready Documentation */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden">
+            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+            style={{
+                width: "385px",
+                height: "510px",
+                paddingLeft: "40px",
+                paddingRight: "40px",
+                paddingBottom: "104px",
+                mixBlendMode: "screen",
+                backgroundImage: "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-2.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               
 
               {/* Icon */}
@@ -67,7 +91,19 @@ export default function Benefits() {
           {/* Risk Detection & Red Flag Alerts */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden">
+            <div className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+            style={{
+                width: "385px",
+                height: "510px",
+                paddingLeft: "40px",
+                paddingRight: "40px",
+                paddingBottom: "104px",
+                mixBlendMode: "screen",
+                backgroundImage: "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-3.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               
 
               {/* Icon */}
