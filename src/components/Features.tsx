@@ -3,19 +3,50 @@ export default function Features() {
     <section className="w-full max-w-[1440px] mx-auto px-6 py-16 md:px-12 md:py-24">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-4"
+          style={{
+            fontFamily: "var(--font-gilroy-bold)",
+            fontWeight: 400,
+            fontSize: "60px",
+            lineHeight: "62px",
+            letterSpacing: "-0.02em",
+            textTransform: "capitalize",
+            background:
+              "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.55) 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
           Proof, Not Promises
         </h2>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+        <p
+          className="text-lg max-w-2xl mx-auto"
+          style={{
+            fontFamily: "var(--font-space-grotesk)",
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize: "24px",
+            lineHeight: "32px",
+            letterSpacing: "0%",
+            textAlign: "center",
+            background: "#FFFFFFCC",
+            color: "transparent",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            padding: "8px 0",
+          }}
+        >
           KPI-level gains from data import to Form 6785, verifiable and
           audit-ready.
         </p>
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6.75">
-        {/* Days, Not Months */}
-        <div className="relative overflow-hidden rounded-2xl p-8 h-[412px] w-[646px] flex flex-col justify-end group">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-[1200px] mx-auto">
+        {/* Days, Not Months - Wider card (spans 7 columns) */}
+        <div className="lg:col-span-7 relative overflow-hidden rounded-2xl p-8 h-[412px] flex flex-col justify-end group">
           <div
             className="absolute opacity-100 mix-blend-screen"
             style={{
@@ -65,8 +96,8 @@ export default function Features() {
           </div>
         </div>
 
-        {/* 100% Traceability */}
-        <div className="relative overflow-hidden rounded-2xl p-8 h-[412px] w-[538px] flex flex-col justify-end group">
+        {/* 100% Traceability - Narrower card (spans 5 columns) */}
+        <div className="lg:col-span-5 relative overflow-hidden rounded-2xl p-8 h-[412px] flex flex-col justify-end group">
           <div
             className="absolute opacity-100 mix-blend-screen"
             style={{
@@ -115,8 +146,8 @@ export default function Features() {
           </div>
         </div>
 
-        {/* 65% Contract Cap Enforced */}
-        <div className="relative overflow-hidden rounded-2xl p-8 h-[412px] w-[560px] flex flex-col justify-end group">
+        {/* 65% Contract Cap Enforced - Narrower card (spans 5 columns) */}
+        <div className="lg:col-span-5 relative overflow-hidden rounded-2xl p-8 h-[412px] flex flex-col justify-end group">
           <div
             className="absolute opacity-100 mix-blend-screen"
             style={{
@@ -165,8 +196,8 @@ export default function Features() {
           </div>
         </div>
 
-        {/* ASC ➔ Regular, Side-By-Side */}
-        <div className="relative overflow-hidden rounded-2xl p-8 h-[412px] w-[624px] flex flex-col justify-end group">
+        {/* ASC ➔ Regular, Side-By-Side - Wider card (spans 7 columns) */}
+        <div className="lg:col-span-7 relative overflow-hidden rounded-2xl p-8 h-[412px] flex flex-col justify-end group">
           <div
             className="absolute opacity-100 mix-blend-screen"
             style={{

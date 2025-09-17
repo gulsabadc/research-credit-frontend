@@ -37,7 +37,7 @@ export default function Navigation() {
 
           {/* Navigation Menu */}
           <div
-            className="hidden md:flex items-center space-x-10 font-sub"
+            className="hidden md:flex items-center font-normal space-x-10"
             style={{ width: "542px", height: "17px", opacity: 1 }}
           >
             <a
@@ -81,7 +81,7 @@ export default function Navigation() {
             </a>
             <Button
               variant="outline"
-              className="border-white/40 text-white hover:bg-white hover:text-blue-900 transition-all duration-200 bg-transparent text-center"
+              className=" text-white border-none hover:bg-white hover:text-blue-900 transition-all duration-200 bg-transparent text-center"
               style={{
                 fontFamily: "var(--font-space-grotesk)",
                 fontWeight: 400,
