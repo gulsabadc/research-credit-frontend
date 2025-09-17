@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
   return (
@@ -16,22 +16,58 @@ export default function CTA() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-24 py-[100px_96px_90px_96px] gap-[70px]">
         <div className="text-center space-y-6 max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-normal text-white leading-tight">
+          <h2
+            className="text-white text-center capitalize"
+            style={{
+              fontFamily: "var(--font-gilroy-bold)",
+              fontWeight: 400,
+              fontSize: "66px",
+              lineHeight: "68px",
+              letterSpacing: "-3%",
+            }}
+          >
             Ready To Save On <br /> Your R&D Tax Credits?
           </h2>
-          <p className="text-xl text-gray-300 font-semibold">
+          <p
+            className="text-gray-300 text-center"
+            style={{
+              fontFamily: "var(--font-space-grotesk)",
+              fontWeight: 700,
+              fontSize: "26px",
+              lineHeight: "30px",
+              letterSpacing: "0%",
+            }}
+          >
             Take the first step towards maximizing your credits today!
           </p>
         </div>
 
         <Button
           size="lg"
-          className="bg-gradient-to-r from-cyan-400 to-teal-400 hover:from-cyan-500 hover:to-teal-500 text-gray-900 font-semibold px-8 py-4 h-19 w-94 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border-0"
+          className="border-0"
+          style={{
+            fontFamily: "var(--font-gilroy-bold)",
+            fontWeight: 400,
+            fontSize: "26px",
+            lineHeight: "93.99px",
+            letterSpacing: "-1%",
+            textAlign: "right",
+            background:
+              "radial-gradient(43.11% 181.04% at 50% 50%, #35C8C8 0%, #00A3A3 100%)",
+            color: "black",
+            padding: "16px 32px",
+            height: "76px", // h-19 equivalent (19 * 4 = 76px)
+            width: "376px", // w-94 equivalent (94 * 4 = 376px)
+            borderRadius: "9999px",
+            boxShadow:
+              "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+            transition: "all 0.3s ease",
+          }}
         >
           Schedule a demo
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </div>
     </section>
-  )
+  );
 }

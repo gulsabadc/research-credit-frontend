@@ -16,12 +16,7 @@ export default function HomePage() {
     <>
       <style jsx global>{`
         body {
-          background: linear-gradient(
-            135deg,
-            #050058 100%,
-            #7A6EFF 50%,
-            #4f46e5 100%
-          ) !important;
+          background: #050036 !important;
           min-height: 100vh;
         }
       `}</style>
