@@ -41,8 +41,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-main: var(--font-gilroy-bold)
-  --font-grotesk: var(--font-space-grotesk)
+  --font-main: var(--font-gilroy-bold);
+  --font-grotesk: var(--font-space-grotesk);
 }
 
 :root {
