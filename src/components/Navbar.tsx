@@ -18,10 +18,11 @@ const spaceGrotesk = Space_Grotesk({
 export default function Navigation() {
   return (
     <header className="container mx-auto px-6 py-6 relative z-10">
-      <div 
+      <div
         className="border border-white/20 rounded-lg px-8 py-4 backdrop-blur-sm"
         style={{
-          background: 'linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)',
+          background:
+            "linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)",
         }}
       >
         <nav className="flex items-center justify-between">
