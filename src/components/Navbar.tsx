@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/global-components/button";
 import localFont from "next/font/local";
 import { Space_Grotesk } from "next/font/google";
 

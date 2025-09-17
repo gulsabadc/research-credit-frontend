@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/global-components/button";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import DashboardPreview from "@/components/Dashboard-preview";

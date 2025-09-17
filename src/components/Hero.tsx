@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/global-components/button";
 import { Sparkles, ArrowRight } from "lucide-react";
 import localFont from "next/font/local";
 

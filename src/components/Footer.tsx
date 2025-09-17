@@ -26,7 +26,11 @@ export default function Footer() {
           <div className="space-y-8">
             <div className="flex items-center gap-2">
               <h2 className="text-6xl font-medium text-white">CreditHero</h2>
-              <img src="/Vector.png" alt="Arrow" className="w-2 h-2 opacity-80 text-[#ECEEEC]" />
+              <img
+                src="/Vector.png"
+                alt="Arrow"
+                className="w-2 h-2 opacity-80 text-[#ECEEEC]"
+              />
             </div>
 
             <nav className="space-y-4 text-gray-300">
@@ -90,7 +94,10 @@ export default function Footer() {
 
             <div>
               <p className="text-gray-400 text-sm mb-2">Email</p>
-              <a href="mailto:hello@logoipsum.com" className="text-white hover:text-cyan-400 transition-colors">
+              <a
+                href="mailto:hello@logoipsum.com"
+                className="text-white hover:text-cyan-400 transition-colors"
+              >
                 hello@logoipsum.com
               </a>
             </div>
@@ -103,5 +110,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
