@@ -21,23 +21,23 @@ export default function Benefits() {
           >
             Maximized Savings, Zero Stress
           </h2>
-          <p 
-  className="max-w-3xl mx-auto text-center"
-  style={{
-    fontFamily: 'var(--font-space-grotesk)',
-    fontWeight: 400,
-    fontSize: '26px',
-    lineHeight: '30px',
-    letterSpacing: '0%',
-    color: '#FFFFFFCC', // Changed to black for better contrast
-    padding: '16px 24px',
-    borderRadius: '8px',
-  }}
->
-  We automate the entire process to capture every eligible expense and
-  minimize audit risks, ensuring you maximize savings without leaving
-  money on the table.
-</p>
+          <p
+            className="max-w-3xl mx-auto text-center"
+            style={{
+              fontFamily: "var(--font-space-grotesk)",
+              fontWeight: 400,
+              fontSize: "26px",
+              lineHeight: "30px",
+              letterSpacing: "0%",
+              color: "#FFFFFFCC", // Changed to black for better contrast
+              padding: "16px 24px",
+              borderRadius: "8px",
+            }}
+          >
+            We automate the entire process to capture every eligible expense and
+            minimize audit risks, ensuring you maximize savings without leaving
+            money on the table.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
