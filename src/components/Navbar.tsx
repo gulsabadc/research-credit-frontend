@@ -18,11 +18,12 @@ const spaceGrotesk = Space_Grotesk({
 export default function Navigation() {
   return (
     <header className="container mx-auto px-6 py-6 relative z-10">
-      <div
+
+      <div 
         className="border border-white/20 rounded-lg px-8 py-4 backdrop-blur-sm"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)",
+          background: 'linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)',
+
         }}
       >
         <nav className="flex items-center justify-between">
@@ -38,7 +39,7 @@ export default function Navigation() {
 
           {/* Navigation Menu */}
           <div
-            className="hidden md:flex items-center space-x-10 font-sub"
+            className="hidden md:flex items-center font-normal space-x-10"
             style={{ width: "542px", height: "17px", opacity: 1 }}
           >
             <a
@@ -82,7 +83,7 @@ export default function Navigation() {
             </a>
             <Button
               variant="outline"
-              className="border-white/40 text-white hover:bg-white hover:text-blue-900 transition-all duration-200 bg-transparent text-center"
+              className=" text-white border-none hover:bg-white hover:text-blue-900 transition-all duration-200 bg-transparent text-center"
               style={{
                 fontFamily: "var(--font-space-grotesk)",
                 fontWeight: 400,
