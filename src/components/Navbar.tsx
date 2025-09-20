@@ -32,7 +32,7 @@ export default function Navigation() {
             <div className="flex items-center">
               <h1 className="text-4xl font-normal font-main">
                 <span className="text-white">Credit</span>
-                <span className="text-emerald-400">Hero</span>
+                  <span className="text-[#5cdcdc]">Hero</span>
               </h1>
             </div>
           </div>
