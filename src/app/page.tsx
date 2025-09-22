@@ -10,6 +10,7 @@ import Process from "@/components/Process";
 import Benefits from "@/components/Benefits";
 import CTA from "@/components/Cta";
 import Footer from "@/components/Footer";
+import HeroFinal from "@/components/Hero-final";
 
 export default function HomePage() {
   return (
@@ -22,9 +23,7 @@ export default function HomePage() {
       `}</style>
 
       <div className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <DashboardPreview />
+        <HeroFinal />
         <TrustedBy />
         <Features />
         <Process />
