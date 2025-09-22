@@ -39,15 +39,16 @@ export default function Hero() {
 
           {/* Main Headline */}
           <div className={`${gilroyBold.className}`}>
-            <h1
-              className="text-[66px] md:text-6xl font-bold font-main mb-6 text-balance tracking-tight leading-tight 
-             bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent"
-            >
-              Audit-ready R&D tax credits{" "}
+            <h1 className="font-main font-[400] text-[66px] tracking-[-0.02em] mb-6 text-balance leading-[62px]">
+              <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
+                Audit-ready R&amp;D tax credits
+              </span>{" "}
               <span className="bg-gradient-to-b from-[#9BFFFF] to-[#008282] bg-clip-text text-transparent">
                 in days,
               </span>{" "}
-              not months
+              <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
+                not months
+              </span>
             </h1>
           </div>
 
