@@ -5,7 +5,7 @@ import DashboardPreview from "./Dashboard-preview";
 
 export default function HeroFinal() {
   return (
-    <div className="relative w-[1440px] h-[1550px] mx-auto overflow-hidden">
+    <div className="relative w-full h-full mx-auto overflow-hidden">
       {/* Background Image Layer */}
       <div className="absolute inset-0 w-full h-full mix-blend-overlay opacity-40">
         <Image
