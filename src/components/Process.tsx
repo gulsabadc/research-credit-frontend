@@ -39,7 +39,7 @@ export default function Process() {
         </div>
 
         <img
-          src="/Process.png"
+          src="/processgreen.png"
           alt="4-step process flow"
           className="w-full max-w-4xl mx-auto"
         />

@@ -12,14 +12,20 @@ export default function Features() {
             lineHeight: "62px",
             letterSpacing: "-0.02em",
             textTransform: "capitalize",
-            background:
-              "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.55) 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
           }}
         >
-          Proof, Not Promises
+          <span style={{ color: "#96ED00" }}>Proof</span>
+          <span
+            style={{
+              background:
+                "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.55) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            , Not Promises
+          </span>
         </h2>
         <p
           className="text-lg max-w-2xl mx-auto"
@@ -69,7 +75,7 @@ export default function Features() {
             <div className="absolute bottom-4 left-4 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
-                src="/Rectangle1.png"
+                src="/Green3D1.png"
                 alt="Days Not Months Icon"
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
@@ -107,7 +113,7 @@ export default function Features() {
             <div className="absolute bottom-4 right-4 w-32 h-32 bg-[#eeeef720] rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
-                src="/Rectangle2.png"
+                src="/Green3D2.png"
                 alt="100% Traceability Icon"
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
@@ -148,7 +154,7 @@ export default function Features() {
             <div className="absolute bottom-4 left-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
-                src="/Rectangle3.png"
+                src="/Green3D3.png"
                 alt="65% Contract Cap Enforced Icon"
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
@@ -186,7 +192,7 @@ export default function Features() {
             <div className="absolute bottom-4 right-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
-                src="/Rectangle4.png"
+                src="/Green3D4.png"
                 alt="ASC Regular Side-By-Side Icon"
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />

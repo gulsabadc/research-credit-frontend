@@ -15,7 +15,7 @@ export default function Hero() {
     <main className="container mx-auto px-6 py-20 relative z-10">
       <div className={`${gilroyBold.variable}`}>
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[rgba(92,220,220,0.4)] to-[rgba(49,118,118,0.4)] backdrop-blur-sm border-2 border-white/20 rounded-full px-4 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#96ED00] to-[#82CE00] backdrop-blur-sm border-2 border-white/20 rounded-full px-4 py-2 mb-8">
             <Sparkles className="w-5 h-4 text-[#D6FFFF]" />
             <span
               className="text-center"
@@ -43,7 +43,7 @@ export default function Hero() {
               <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
                 Audit-ready R&amp;D tax credits
               </span>{" "}
-              <span className="bg-gradient-to-b from-[#9BFFFF] to-[#008282] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-b from-[#96ED00] to-[#7BC300] bg-clip-text text-transparent">
                 in days,
               </span>{" "}
               <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
@@ -81,11 +81,11 @@ export default function Hero() {
               letterSpacing: "-1%",
               textAlign: "right",
               background:
-                "radial-gradient(43.11% 181.04% at 50% 50%, #35C8C8 0%, #00A3A3 100%)",
+                "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
               color: "black",
               padding: "16px 32px",
-              height: "76px", // h-19 equivalent (19 * 4 = 76px)
-              width: "376px", // w-94 equivalent (94 * 4 = 376px)
+              height: "76px", 
+              width: "376px", 
               borderRadius: "9999px",
               boxShadow:
                 "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",

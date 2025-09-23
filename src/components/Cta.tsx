@@ -53,7 +53,7 @@ export default function CTA() {
             letterSpacing: "-1%",
             textAlign: "right",
             background:
-              "radial-gradient(43.11% 181.04% at 50% 50%, #35C8C8 0%, #00A3A3 100%)",
+              "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
             color: "black",
             padding: "16px 32px",
             height: "76px", // h-19 equivalent (19 * 4 = 76px)
