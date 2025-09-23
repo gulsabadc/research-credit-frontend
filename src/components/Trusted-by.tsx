@@ -2,7 +2,7 @@ export default function TrustedBy() {
   return (
     <section
       className="w-full py-[46px] px-24"
-      style={{ backgroundColor: "#060036", height: "141px" }}
+      style={{ backgroundColor: "#090051", height: "141px" }}
     >
       <div className="flex items-center justify-center gap-[70px] max-w-7xl mx-auto">
         <div className="text-white text-lg font-medium whitespace-nowrap">

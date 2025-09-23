@@ -15,7 +15,7 @@ export default function Hero() {
     <main className="container mx-auto px-6 py-20 relative z-10">
       <div className={`${gilroyBold.variable}`}>
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#96ED00] to-[#82CE00] backdrop-blur-sm border-2 border-white/20 rounded-full px-4 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-[#375413] backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
             <Sparkles className="w-5 h-4 text-[#D6FFFF]" />
             <span
               className="text-center"
@@ -43,7 +43,7 @@ export default function Hero() {
               <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
                 Audit-ready R&amp;D tax credits
               </span>{" "}
-              <span className="bg-gradient-to-b from-[#96ED00] to-[#7BC300] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-b from-[#96ED00]  to-[#7BC300] bg-clip-text text-transparent">
                 in days,
               </span>{" "}
               <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
