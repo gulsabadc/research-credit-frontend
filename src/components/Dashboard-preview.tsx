@@ -3,16 +3,15 @@ import React from 'react';
 export default function DashboardPreview() {
   return (
     <div className="relative flex justify-center items-center py-20">
-      
       {/* Blurred ellipse with linear gradient */}
       <div
-        className="absolute w-[900px] h-[359px] rounded-full blur-3xl opacity-70"
+        className="absolute w-[1039px] h-[359px] rounded-full blur-3xl opacity-70"
         style={{
-          background: 'linear-gradient(360deg, #8D83FF 0%, #8623FF 100%)',
-          top: '-100px', // Adjusted position to be high above the dashboard
-          left: '50%', // Centering horizontally
+          background: 'linear-gradient(90deg, #8D83FF 0%, #8623FF 100%)',
+          top: '200px',
+          left: '50%',
           transform: 'translateX(-50%)',
-          zIndex: -1, // Ensures the glow is behind the dashboard for a lighting effect
+          zIndex: -1, // This places the ellipse behind the dashboard image
         }}
       ></div>
 

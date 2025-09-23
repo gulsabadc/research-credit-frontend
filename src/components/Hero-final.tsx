@@ -8,11 +8,11 @@ export default function HeroFinal() {
   return (
     <div className="relative w-full h-full mx-auto overflow-hidden">
       {/* Background Image Layer */}
-      <div className="absolute inset-0 w-full h-full mix-blend-overlay opacity-70">
+      <div className="absolute inset-0 w-full h-full mix-blend-overlay opacity-100">
         <Image
           src="/hero-bg.png"
           alt="Hero Background"
-          fill
+          fill={true}
           className="object-cover"
           priority
         />
