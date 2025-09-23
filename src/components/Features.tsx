@@ -54,25 +54,35 @@ export default function Features() {
         {/* First Row */}
         <div className="flex flex-col lg:flex-row gap-10 items-stretch">
           {/* Days, Not Months */}
-          <div className="w-full lg:w-[646px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF33]">
+          <div className="w-full lg:w-[646px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
               className="absolute opacity-100 mix-blend-screen"
               style={{
                 width: "958.01px",
                 height: "494.88px",
-                top: "-328.49px",
-                left: "-57.43px",
+                top: "-294px",
+                left: "-99px",
                 background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #A2A2A2 43%, #686868 55%, #3B3B3B 66%, #1B1B1B 75%, #070707 83%, #000000 88%)",
-                backgroundBlendMode: "screen",
+                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
               }}
             ></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-700/30 via-blue-400/20 to-blue-900/30 backdrop-blur-xl rounded-[10px]"></div>
-            <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400/10 via-transparent to-blue-500/10 opacity-70 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse"></div>
-            <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-transparent via-cyan-400 to-transparent animate-pulse"></div>
-            <div className="absolute top-4 right-4 w-32 h-32 bg-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-4 left-4 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+            <div
+              className="absolute opacity-0"
+              style={{
+                width: "958.01px",
+                height: "494.88px",
+                top: "-294px",
+                left: "-99px",
+              }}
+            >
+              <img
+                src="/Card1Vector.png"
+                alt=""
+                className="w-full h-full object-contain"
+              />
+            </div>
+
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D1.png"
@@ -80,6 +90,7 @@ export default function Features() {
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
             </div>
+
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
               <h3 className="text-2xl font-bold text-white mb-2">
                 Days, Not Months
@@ -91,26 +102,20 @@ export default function Features() {
           </div>
 
           {/* 100% Traceability */}
-          <div className="w-full lg:w-[538px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF33]">
+          <div className="w-full lg:w-[538px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
               className="absolute opacity-100 mix-blend-screen"
               style={{
                 width: "958.01px",
                 height: "494.88px",
-                top: "-175.58px",
-                left: "271.51px",
-                transform: "rotate(90deg)",
+                top: "50px" /* Moved up from 175.58px */,
+                left: "300px",
+                transform: "rotate(0deg)",
                 background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #A2A2A2 43%, #686868 55%, #3B3B3B 66%, #1B1B1B 75%, #070707 83%, #000000 88%)",
-                backgroundBlendMode: "screen",
+                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 20%, #A2A2A2 30%, #686868 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
               }}
             ></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#5B66FF33] via-[#00000020] to-[#f3f3f630] backdrop-blur-xl rounded-[10px]"></div>
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#f2f2f710] via-transparent to-[#d9dae310] opacity-70 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#e7e8f1] to-transparent animate-pulse"></div>
-            <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-transparent via-[#f1f1f2] to-transparent animate-pulse"></div>
-            <div className="absolute top-4 left-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-4 right-4 w-32 h-32 bg-[#eeeef720] rounded-full blur-3xl animate-pulse"></div>
+
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D2.png"
@@ -118,6 +123,7 @@ export default function Features() {
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
             </div>
+
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
               <h3 className="text-2xl font-bold text-white mb-2">
                 100% Traceability
@@ -132,7 +138,7 @@ export default function Features() {
         {/* Second Row */}
         <div className="flex flex-col lg:flex-row gap-10 items-stretch">
           {/* 65% Contract Cap Enforced */}
-          <div className="w-full lg:w-[560px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF33]">
+          <div className="w-full lg:w-[560px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
               className="absolute opacity-100 mix-blend-screen"
               style={{
@@ -146,12 +152,7 @@ export default function Features() {
                 backgroundBlendMode: "screen",
               }}
             ></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#5B66FF33] via-[#5B66FF20] to-[#5B66FF30] backdrop-blur-xl rounded-[10px]"></div>
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#5B66FF10] via-transparent to-[#5B66FF10] opacity-70 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#5B66FF] to-transparent animate-pulse"></div>
-            <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-transparent via-[#5B66FF] to-transparent animate-pulse"></div>
-            <div className="absolute top-4 right-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-4 left-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
+            
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D3.png"
@@ -170,7 +171,7 @@ export default function Features() {
           </div>
 
           {/* ASC ➔ Regular, Side-By-Side */}
-          <div className="w-full lg:w-[624px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10">
+          <div className="w-full lg:w-[624px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
               className="absolute opacity-100 mix-blend-screen"
               style={{
@@ -184,12 +185,7 @@ export default function Features() {
                 backgroundBlendMode: "screen",
               }}
             ></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#5B66FF33] via-[#5B66FF20] to-[#5B66FF30] backdrop-blur-xl rounded-[10px]"></div>
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#5B66FF10] via-transparent to-[#5B66FF10] opacity-70 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#5B66FF] to-transparent animate-pulse"></div>
-            <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-transparent via-[#5B66FF] to-transparent animate-pulse"></div>
-            <div className="absolute top-4 left-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-4 right-4 w-32 h-32 bg-[#5B66FF20] rounded-full blur-3xl animate-pulse"></div>
+            
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D4.png"
