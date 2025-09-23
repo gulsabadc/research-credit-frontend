@@ -15,7 +15,7 @@ export default function Hero() {
     <main className="container mx-auto px-6 py-20 relative z-10">
       <div className={`${gilroyBold.variable}`}>
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[rgba(92,220,220,0.4)] to-[rgba(49,118,118,0.4)] backdrop-blur-sm border border-blue-700/50 rounded-full px-4 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[rgba(92,220,220,0.4)] to-[rgba(49,118,118,0.4)] backdrop-blur-sm border-2 border-white/20 rounded-full px-4 py-2 mb-8">
             <Sparkles className="w-5 h-4 text-[#D6FFFF]" />
             <span
               className="text-center"
