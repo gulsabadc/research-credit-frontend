@@ -5,7 +5,18 @@ export default function TrustedBy() {
       style={{ backgroundColor: "#090051", height: "141px" }}
     >
       <div className="flex items-center justify-center gap-[70px] max-w-7xl mx-auto">
-        <div className="text-white text-lg font-medium whitespace-nowrap">
+        <div
+          className="text-white text-lg font-medium whitespace-nowrap"
+          style={{
+            fontFamily: "Space Grotesk",
+            fontWeight: 500,
+            fontStyle: "normal",
+            fontSize: "24px",
+            lineHeight: "100%",
+            letterSpacing: "0%",
+            textAlign: "center",
+          }}
+        >
           Trusted by
         </div>
 
