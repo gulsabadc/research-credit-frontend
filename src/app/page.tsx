@@ -24,7 +24,6 @@ export default function HomePage() {
 
       <div className="min-h-screen">
         <HeroFinal />
-        <TrustedBy />
         <Features />
         <Process />
         <Benefits />
