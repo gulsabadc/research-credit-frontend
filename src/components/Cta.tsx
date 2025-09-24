@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <section className="w-full h-[526px] relative overflow-hidden">
       {/* Background with dark blue gradient and geometric elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-700 to-blue-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-700 to-blue-900 bg-[url('/RnD.png')] bg-cover bg-center">
         {/* Geometric background elements */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-blue-800/30 to-transparent transform -skew-y-12"></div>
