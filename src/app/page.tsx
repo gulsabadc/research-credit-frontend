@@ -1,10 +1,4 @@
 "use client";
-
-import { Button } from "@/components/global-components/button";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import DashboardPreview from "@/components/Dashboard-preview";
-import TrustedBy from "@/components/Trusted-by";
 import Features from "@/components/Features";
 import Process from "@/components/Process";
 import Benefits from "@/components/Benefits";

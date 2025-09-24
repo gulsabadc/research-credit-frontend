@@ -91,11 +91,11 @@ export default function Features() {
               />
             </div>
 
-            <div className="relative z-10 flex flex-col justify-center h-20 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">
+            <div className="relative z-10 flex flex-col justify-center h-15.5 text-center">
+              <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 Days, Not Months
               </h3>
-              <p className="text-gray-200">
+              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
                 Guided workflow to audit-ready package
               </p>
             </div>
@@ -125,10 +125,10 @@ export default function Features() {
             </div>
 
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 100% Traceability
               </h3>
-              <p className="text-gray-200">
+              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
                 Evidence Vault + immutable audit logs
               </p>
             </div>
@@ -161,10 +161,10 @@ export default function Features() {
               />
             </div>
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 65% Contract Cap Enforced
               </h3>
-              <p className="text-gray-200">
+              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
                 Rights-retained checks, auto-applied
               </p>
             </div>
@@ -194,10 +194,10 @@ export default function Features() {
               />
             </div>
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 ASC ➔ Regular, Side-By-Side
               </h3>
-              <p className="text-gray-200">Optimized credit scenarios</p>
+              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">Optimized credit scenarios</p>
             </div>
           </div>
         </div>
