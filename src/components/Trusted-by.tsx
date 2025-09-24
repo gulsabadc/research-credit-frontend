@@ -82,7 +82,7 @@ export default function TrustedBy() {
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-transparent rounded flex items-center text-black justify-center">
                   <Image
-                    src="/Fouth.svg"
+                    src="/Fourth.svg"
                     alt="First Logo"
                     width={32}
                     height={32}

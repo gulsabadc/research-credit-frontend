@@ -55,34 +55,18 @@ export default function Features() {
         <div className="flex flex-col lg:flex-row gap-6.5 items-stretch">
           {/* Days, Not Months */}
           <div className="w-full lg:w-[646px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
+            {/* Background SVG */}
             <div
-              className="absolute opacity-100 mix-blend-screen"
+              className="absolute inset-0 opacity-100"
               style={{
-                width: "958.01px",
-                height: "430.88px",
-                top: "-294px",
-                left: "-99px",
-                background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
+                backgroundImage: "url('/1.svg')", // <-- your SVG file here
+                backgroundSize: "cover", // or "contain"
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
             ></div>
 
-            <div
-              className="absolute opacity-0"
-              style={{
-                width: "958.01px",
-                height: "494.88px",
-                top: "-294px",
-                left: "-99px",
-              }}
-            >
-              <img
-                src="/Card1Vector.png"
-                alt=""
-                className="w-full h-full object-contain"
-              />
-            </div>
-
+            {/* Green Icon */}
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D1.png"
@@ -91,6 +75,7 @@ export default function Features() {
               />
             </div>
 
+            {/* Text */}
             <div className="relative z-10 flex flex-col justify-center h-15.5 text-center">
               <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 Days, Not Months
@@ -103,19 +88,18 @@ export default function Features() {
 
           {/* 100% Traceability */}
           <div className="w-full lg:w-[538px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
+            {/* Background SVG */}
             <div
-              className="absolute opacity-100 mix-blend-screen"
+              className="absolute inset-0 opacity-100"
               style={{
-                width: "958.01px",
-                height: "494.88px",
-                top: "50px" /* Moved up from 175.58px */,
-                left: "300px",
-                transform: "rotate(0deg)",
-                background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 20%, #A2A2A2 30%, #686868 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
+                backgroundImage: "url('/2.svg')", // <-- your SVG file here
+                backgroundSize: "cover", // or "contain"
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
             ></div>
 
+            {/* Green Icon */}
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D2.png"
@@ -124,6 +108,7 @@ export default function Features() {
               />
             </div>
 
+            {/* Text */}
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
               <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 100% Traceability
@@ -139,20 +124,18 @@ export default function Features() {
         <div className="flex flex-col lg:flex-row gap-6.5 items-stretch">
           {/* 65% Contract Cap Enforced */}
           <div className="w-full lg:w-[560px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
+            {/* Background SVG */}
             <div
-              className="absolute opacity-100 mix-blend-screen"
+              className="absolute inset-0 opacity-100"
               style={{
-                width: "494.88px",
-                height: "494.88px",
-                top: "-157.51px",
-                left: "-313.49px",
-                transform: "rotate(90deg)",
-                background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
-                backgroundBlendMode: "screen",
+                backgroundImage: "url('/3.svg')", // <-- your SVG file here
+                backgroundSize: "cover", // or "contain"
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
             ></div>
 
+            {/* Green Icon */}
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D3.png"
@@ -160,6 +143,8 @@ export default function Features() {
                 className="w-45.5 h-47 object-contain drop-shadow-lg"
               />
             </div>
+
+            {/* Text */}
             <div className="relative z-10 flex flex-col justify-center h-20 text-center">
               <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 65% Contract Cap Enforced
@@ -172,36 +157,37 @@ export default function Features() {
 
           {/* ASC ➔ Regular, Side-By-Side */}
           <div className="w-full lg:w-[624px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
-            <div
-              className="absolute opacity-100 mix-blend-screen"
-              style={{
-                width: "619.23px",
-                height: "251.57px",
-                top: "-157.95px",
-                left: "-62.68px",
-                transform: "rotate(0deg)",
-                background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
-                backgroundBlendMode: "screen",
-              }}
-            ></div>
+  {/* Background SVG */}
+  <div
+    className="absolute inset-0 opacity-100"
+    style={{
+      backgroundImage: "url('/4.svg')", // <-- your SVG file here
+      backgroundSize: "cover", // or "contain"
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  ></div>
 
-            <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-              <img
-                src="/Green3D4.png"
-                alt="ASC Regular Side-By-Side Icon"
-                className="w-45.5 h-47 object-contain drop-shadow-lg"
-              />
-            </div>
-            <div className="relative z-10 flex flex-col justify-center h-20 text-center">
-              <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
-                ASC ➔ Regular, Side-By-Side
-              </h3>
-              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
-                Optimized credit scenarios
-              </p>
-            </div>
-          </div>
+  {/* Green Icon */}
+  <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
+    <img
+      src="/Green3D4.png"
+      alt="ASC Regular Side-By-Side Icon"
+      className="w-45.5 h-47 object-contain drop-shadow-lg"
+    />
+  </div>
+
+  {/* Text */}
+  <div className="relative z-10 flex flex-col justify-center h-20 text-center">
+    <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
+      ASC ➔ Regular, Side-By-Side
+    </h3>
+    <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
+      Optimized credit scenarios
+    </p>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
