@@ -50,9 +50,9 @@ export default function Features() {
       </div>
 
       {/* Cards Layout */}
-      <div className="flex flex-col gap-10 max-w-[1224px] mx-auto">
+      <div className="flex flex-col gap-6.5 max-w-[1224px] mx-auto">
         {/* First Row */}
-        <div className="flex flex-col lg:flex-row gap-10 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6.5 items-stretch">
           {/* Days, Not Months */}
           <div className="w-full lg:w-[646px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
@@ -136,7 +136,7 @@ export default function Features() {
         </div>
 
         {/* Second Row */}
-        <div className="flex flex-col lg:flex-row gap-10 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6.5 items-stretch">
           {/* 65% Contract Cap Enforced */}
           <div className="w-full lg:w-[560px] relative overflow-hidden rounded-[10px] p-10 h-[412px] flex flex-col justify-end group border-[1.5px] border-white/10 bg-[#5B66FF]/20">
             <div
@@ -152,7 +152,7 @@ export default function Features() {
                 backgroundBlendMode: "screen",
               }}
             ></div>
-            
+
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D3.png"
@@ -185,7 +185,7 @@ export default function Features() {
                 backgroundBlendMode: "screen",
               }}
             ></div>
-            
+
             <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="/Green3D4.png"
@@ -197,7 +197,9 @@ export default function Features() {
               <h3 className="text-4xl font-medium font-grotesk text-[#EFEEF1] mb-2">
                 ASC ➔ Regular, Side-By-Side
               </h3>
-              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">Optimized credit scenarios</p>
+              <p className="text-white/80 font-normal text-2xl font-grotesk h-8">
+                Optimized credit scenarios
+              </p>
             </div>
           </div>
         </div>
