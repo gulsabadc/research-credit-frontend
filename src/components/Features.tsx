@@ -59,7 +59,7 @@ export default function Features() {
               className="absolute opacity-100 mix-blend-screen"
               style={{
                 width: "958.01px",
-                height: "494.88px",
+                height: "430.88px",
                 top: "-294px",
                 left: "-99px",
                 background:
@@ -148,7 +148,7 @@ export default function Features() {
                 left: "-313.49px",
                 transform: "rotate(90deg)",
                 background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #A2A2A2 43%, #686868 55%, #3B3B3B 66%, #1B1B1B 75%, #070707 83%, #000000 88%)",
+                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
                 backgroundBlendMode: "screen",
               }}
             ></div>
@@ -181,7 +181,7 @@ export default function Features() {
                 left: "-62.68px",
                 transform: "rotate(0deg)",
                 background:
-                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #A2A2A2 43%, #686868 55%, #3B3B3B 66%, #1B1B1B 75%, #070707 83%, #000000 88%)",
+                  "radial-gradient(50% 50% at 50% 50%, #FFFFFF 27%, #E8E8E8 31%, #bdacff 43%, #9b93f2 55%, #4942ff 66%, #4942ff 20%, #070707 83%, #000000 88%, transparent 100%)",
                 backgroundBlendMode: "screen",
               }}
             ></div>
