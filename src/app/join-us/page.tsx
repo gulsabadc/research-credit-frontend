@@ -215,7 +215,7 @@ export default function JoinUs() {
                     onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
                   />
                   <Label htmlFor="terms" className="text-sm text-gray-700">
-                    I agree to CreditPro's{" "}
+                    I agree to CreditPro&apos;s{" "}
                     <a href="#" className="text-blue-600 hover:underline">
                       Terms & Conditions
                     </a>{" "}
