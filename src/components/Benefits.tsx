@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <section className="w-full py-20 px-6">
+    <section className="w-full py-25 px-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2
@@ -40,12 +40,12 @@ export default function Benefits() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-11.5">
           {/* Real-Time Expense Verification */}
           <div className="relative group">
             <div className="absolute inset-0 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <div
-              className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+              className="relative bg-[#090051] backdrop-blur-sm border-[10px] border-[#FFFFFF0F] rounded-[10px] h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
               style={{
                 width: "385px",
                 height: "510px",
@@ -53,8 +53,7 @@ export default function Benefits() {
                 paddingRight: "40px",
                 paddingBottom: "104px",
                 mixBlendMode: "screen",
-                backgroundImage:
-                  "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-1.png')",
+                backgroundImage:('/card-bg-1.png'),
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -88,7 +87,7 @@ export default function Benefits() {
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <div
-              className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+              className="relative bg-[#090051] backdrop-blur-sm border-[10px] border-[#FFFFFF0F] rounded-[10px] h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
               style={{
                 width: "385px",
                 height: "510px",
@@ -131,7 +130,7 @@ export default function Benefits() {
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <div
-              className="relative bg-[#090051] backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
+              className="relative bg-[#090051] backdrop-blur-sm border-[10px] border-[#FFFFFF0F] rounded-[10px] h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
               style={{
                 width: "385px",
                 height: "510px",
@@ -139,8 +138,7 @@ export default function Benefits() {
                 paddingRight: "40px",
                 paddingBottom: "104px",
                 mixBlendMode: "screen",
-                backgroundImage:
-                  "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-3.png')",
+                backgroundImage: ('/card-bg-3.png'),
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
