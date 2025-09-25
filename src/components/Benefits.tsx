@@ -53,7 +53,7 @@ export default function Benefits() {
                 paddingRight: "40px",
                 paddingBottom: "104px",
                 mixBlendMode: "screen",
-                backgroundImage:('/card-bg-1.png'),
+                backgroundImage:"linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-1.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -119,10 +119,10 @@ export default function Benefits() {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
                 Audit-Ready
               </h3>
-              <h3 className="text-2xl font-bold text-white">Documentation</h3>
+              <h3 className="text-3xl font-normal text-white font-grotesk">Documentation</h3>
             </div>
           </div>
 
@@ -138,7 +138,8 @@ export default function Benefits() {
                 paddingRight: "40px",
                 paddingBottom: "104px",
                 mixBlendMode: "screen",
-                backgroundImage: ('/card-bg-3.png'),
+                backgroundImage:
+                  "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-3.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -161,10 +162,10 @@ export default function Benefits() {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
                 Risk Detection &
               </h3>
-              <h3 className="text-2xl font-bold text-white">Red Flag Alerts</h3>
+              <h3 className="text-3xl font-normal text-white font-grotesk">Red Flag Alerts</h3>
             </div>
           </div>
         </div>
