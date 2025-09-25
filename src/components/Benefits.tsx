@@ -77,10 +77,10 @@ export default function Benefits() {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
                 Real-Time Expense
               </h3>
-              <h3 className="text-2xl font-bold text-white">Verification</h3>
+              <h3 className="text-3xl font-normal text-white font-grotesk">Verification</h3>
             </div>
           </div>
 
