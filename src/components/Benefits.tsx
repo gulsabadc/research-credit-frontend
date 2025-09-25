@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <section className="w-full py-25 px-24">
+    <section className="w-full py-25 px-24 bg-[#090051]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2
@@ -85,7 +85,7 @@ export default function Benefits() {
 
           {/* Audit-Ready Documentation */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+            <div className="absolute inset-0 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <div
               className="relative bg-[#090051] backdrop-blur-sm border-[10px] border-[#FFFFFF0F] rounded-[10px] h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
               style={{
@@ -128,7 +128,7 @@ export default function Benefits() {
 
           {/* Risk Detection & Red Flag Alerts */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-900/40 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+            <div className="absolute inset-0 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
             <div
               className="relative bg-[#090051] backdrop-blur-sm border-[10px] border-[#FFFFFF0F] rounded-[10px] h-127.5 flex flex-col items-center justify-center text-center overflow-hidden"
               style={{
