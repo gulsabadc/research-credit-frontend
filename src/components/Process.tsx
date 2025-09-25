@@ -34,14 +34,14 @@ export default function Process() {
               color: "transparent",
             }}
           >
-            How CreditHero Works
+            How AgentiCredit Works
           </h2>
         </div>
 
         <img
           src="/processgreen.png"
           alt="4-step process flow"
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-4xl mx-auto "
         />
       </div>
     </section>
