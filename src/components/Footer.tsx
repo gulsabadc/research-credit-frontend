@@ -3,20 +3,15 @@ export default function Footer() {
     <footer
       className="relative w-full h-[458px] overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #01001a 0%, #1D00FF 100%)",
+        background: "#000000",
         paddingTop: "94px",
         paddingRight: "96px",
         paddingBottom: "94px",
         paddingLeft: "96px",
+        gap: "70px",
       }}
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-30"
-        style={{
-          backgroundImage: "url(/footerbgc.png)",
-        }}
-      />
+     
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-between">
@@ -25,15 +20,12 @@ export default function Footer() {
           {/* Left Column - Logo and Navigation */}
           <div className="space-y-8">
             <div className="flex items-center gap-2">
-              <h2 className="text-6xl font-medium text-white">CreditHero</h2>
-              <img
-                src="/Vector.png"
-                alt="Arrow"
-                className="w-2 h-2 opacity-80 text-[#ECEEEC]"
-              />
+              <h2 className="text-[56px] font-medium text-[#ECEEEC] font-grotesk">
+                AgentiCredit
+              </h2>
             </div>
 
-            <nav className="space-y-4 text-gray-300">
+            <nav className="space-y-4 text-[#ADB3AB] font-grotesk font-normal text-xl">
               <div className="flex items-center gap-4">
                 <a href="#" className="hover:text-white transition-colors">
                   Home
@@ -64,20 +56,20 @@ export default function Footer() {
           </div>
 
           {/* Center Column - Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 font-grotesk">
             <div>
-              <p className="text-gray-400 text-sm mb-2">Contact Us</p>
+              <p className="text-[#888888] text-[12px] mb-2">Contact Us</p>
               <a
                 href="tel:+18919891191"
-                className="text-white text-3xl font-medium hover:text-cyan-400 transition-colors"
+                className="text-[#ECEEEC] text-[28px] font-medium hover:text-[#93e800] transition-colors"
               >
                 +1 891 989-11-91
               </a>
             </div>
 
             <div>
-              <p className="text-gray-400 text-sm mb-2">Location</p>
-              <address className="text-white not-italic leading-relaxed">
+              <p className="text-[#888888] text-[12px] mb-2">Location</p>
+              <address className="text-[#ECEEEC] font-medium not-italic leading-relaxed">
                 2972 Westheimer Rd. Santa Ana,
                 <br />
                 Illinois 85486
@@ -86,17 +78,19 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Business Hours and Email */}
-          <div className="space-y-6">
+          <div className="space-y-6 font-grotesk">
             <div>
-              <p className="text-gray-400 text-sm mb-2">Mo—Fr</p>
-              <p className="text-white text-xl font-semibold">9am—6pm</p>
+              <p className="text-[#888888] text-[12px] mb-2">Mo—Fr</p>
+              <p className="text-[#ECEEEC] text-[28px] font-medium">9am—6pm</p>
             </div>
 
             <div>
-              <p className="text-gray-400 text-sm mb-2">Email</p>
+              <p className="text-[12px] font-medium text-[#888888] mb-2">
+                Email
+              </p>
               <a
                 href="mailto:hello@logoipsum.com"
-                className="text-white hover:text-cyan-400 transition-colors"
+                className="text-[#ECEEEC] hover:text-green-400 font-medium text-[20px] transition-colors"
               >
                 hello@logoipsum.com
               </a>
@@ -105,8 +99,10 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 border-t border-blue-700/30">
-          <p className="text-gray-400 text-sm">© 2025 — Copyright</p>
+        <div className="pt-8">
+          <p className="text-[#D1D5DB] font-medium text-[20px] font-grotesk">
+            © 2025 — Copyright
+          </p>
         </div>
       </div>
     </footer>
