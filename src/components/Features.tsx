@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <section className="w-full max-w-[1440px] mx-auto px-6 py-16 md:px-12 md:py-24">
+    <section className="w-full max-w-[1440px] mx-auto px-6 py-16 md:px-12 md:py-22.5">
       {/* Header Section */}
       <div className="text-center mb-16">
         <h2
