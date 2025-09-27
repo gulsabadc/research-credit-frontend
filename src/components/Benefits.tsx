@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <section className="w-full py-25 px-24 bg-[#090051]">
+    <section className="w-full py-25 px-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2
