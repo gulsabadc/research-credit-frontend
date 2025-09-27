@@ -47,10 +47,14 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
       )}
     >
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,0.1)_50%,transparent_75%)]" />
-      </div>
+      <div className="absolute inset-0">
+  <div className="absolute inset-0 bg-[url('/LineGrids.png')] bg-cover bg-center" />
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,0.1)_50%,transparent_75%)]" />
+  </div>
+</div>
+
 
       <div className="relative z-10">
         {/* Title */}
@@ -71,7 +75,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
         </h2>
 
         {/* Process Steps */}
-        <div className="relative min-h-[600px]">
+        <div className="relative min-h-[600px] px-[54px] py-[47px]">
           {steps.map((step, index) => (
             <div key={index} className="absolute">
               {index < steps.length - 1 && (
@@ -109,45 +113,47 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
 
               <div
                 className={cn(
-                  "relative z-10 w-132 h-[171] rounded-3xl p-8 transition-all duration-300 hover:scale-105",
+                  "relative z-10 w-132 h-[171px] rounded-[50px] p-8 gap-[50px] left-[103px] transition-all duration-300 hover:scale-105 shadow-[0px_11px_250px_0px_#000000]",
                   step.isHighlighted
-                    ? "bg-[#96ED00] text-gray-900 shadow-2xl shadow-lime-400/30"
-                    : "bg-[#FFFFFF24] text-white shadow-2xl shadow-slate-800/30"
+                    ? "bg-[#96ED00] text-gray-900"
+                    : "bg-[#FFFFFF24] text-white"
                 )}
                 style={{
                   left: `${index * 120}px`, // Progressive right positioning: 0px, 120px, 240px, 360px
-                  top: `${index * 120}px`, // Progressive down positioning: 0px, 120px, 240px, 360px
+                  top: `${index * 158}px`, // Progressive down positioning: 0px, 120px, 240px, 360px
                 }}
               >
                 <div className="relative">
                   {/* Large Step Number Background */}
                   <div
                     className={cn(
-                      "absolute -left-2 -top-2 text-8xl font-bold leading-none select-none",
-                      step.isHighlighted ? "text-gray-900/20" : "text-white/20"
+                      "absolute -left-2 -top-2 text-[110px] font-normal leading-none select-none opacity-50",
+                      step.isHighlighted
+                        ? "bg-[linear-gradient(270deg, #000000 14.05%, rgba(0, 0, 0, 0.5) 73.97"
+                        : "bg-[linear-gradient(270deg,#ffffff_14.05%,rgba(255,255,255,0)_73.97%)] bg-clip-text text-transparent"
                     )}
                   >
                     {step.number}
                   </div>
 
                   {/* Step Content */}
-                  <div className="relative z-10 ml-16">
+                  <div className="relative z-10 ml-42">
                     <h3
                       className={cn(
-                        "text-xl font-bold leading-tight mb-2",
-                        step.isHighlighted ? "text-gray-900" : "text-white"
+                        "text-4xl font-normal leading-9 mb-2",
+                        step.isHighlighted ? "text-[#2D2D2D]" : "text-white"
                       )}
                     >
                       {step.title}
                     </h3>
-                    <p
+                    <h3
                       className={cn(
-                        "text-lg leading-tight",
-                        step.isHighlighted ? "text-gray-800" : "text-gray-300"
+                        "text-4xl font-normal leading-9 mb-2",
+                        step.isHighlighted ? "text-[#2D2D2D]" : "text-white"
                       )}
                     >
                       {step.description}
-                    </p>
+                    </h3>
                   </div>
                 </div>
               </div>
