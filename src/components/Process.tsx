@@ -93,7 +93,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                     style={{
                       left: `${cardX + 520}px`,
                       top: `${cardY + 60}px`,
-                      zIndex: zIndex - 1, // Connectors behind the cards
+                      zIndex: 20, 
                     }}
                   >
                     <svg
