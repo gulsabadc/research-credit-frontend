@@ -64,7 +64,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
             fontFamily: "var(--font-gilroy-bold)",
             fontWeight: 400,
             fontSize: "60px",
-            lineHeight: "62px",
+            lineHeight: "69px",
             letterSpacing: "-0.02em",
             textTransform: "capitalize",
           }}
@@ -93,11 +93,12 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                       width="140"
                       height="120"
                       viewBox="0 0 140 120"
-                      className="text-[#96ED00]"
+                      className="text-[#96ED00] mt-[8px]"
+                      
                     >
                       {/* Curve */}
                       <path
-                        d="M10 20 Q73 10 75 80"
+                        d="M10 20 Q73 20 75 80"
                         stroke="currentColor"
                         strokeWidth="6"
                         fill="none"
