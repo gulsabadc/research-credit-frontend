@@ -113,8 +113,8 @@ export default function Benefits() {
                   alt="3D Document with Checklist"
                   className="object-contain"
                   style={{
-                    width: "162px",
-                    height: "204px",
+                    width: "220.36px",
+                    height: "174.9px",
                     transform: "rotate(-4.29deg)",
                     mixBlendMode: "luminosity",
                   }}
@@ -157,8 +157,8 @@ export default function Benefits() {
                   alt="3D Risk Alert Icon"
                   className="object-contain"
                   style={{
-                    width: "152px",
-                    height: "180px",
+                    width: "220.36px",
+                    height: "174.9px",
                     transform: "rotate(8.07deg)",
                     mixBlendMode: "luminosity",
                   }}
