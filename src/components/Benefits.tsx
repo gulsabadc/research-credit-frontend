@@ -9,7 +9,7 @@ export default function Benefits() {
               fontFamily: "var(--font-gilroy-bold)",
               fontWeight: 400,
               fontSize: "60px",
-              lineHeight: "62px",
+              lineHeight: "69px",
               letterSpacing: "-2%",
               background:
                 "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.55) 100%)",
@@ -53,7 +53,8 @@ export default function Benefits() {
                 paddingRight: "40px",
                 paddingBottom: "104px",
                 mixBlendMode: "screen",
-                backgroundImage:"linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-1.png')",
+                backgroundImage:
+                  "linear-gradient(rgba(9, 0, 81, 0.85), rgba(9, 0, 81, 0.85)), url('/card-bg-1.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -68,18 +69,20 @@ export default function Benefits() {
                   alt="3D Chart with Checkmark"
                   className="object-contain"
                   style={{
-                    width: "180px",
-                    height: "auto",
+                    width: "220.36px",
+                    height: "175px",
                     transform: "rotate(13.04deg)",
                     mixBlendMode: "luminosity",
                   }}
                 />
               </div>
 
-              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
+              <h3 className="text-[32px] w-[333px] font-normal text-white mb-2 font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
                 Real-Time Expense
               </h3>
-              <h3 className="text-3xl font-normal text-white font-grotesk">Verification</h3>
+              <h3 className="text-[32px] font-normal text-white font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
+                Verification
+              </h3>
             </div>
           </div>
 
@@ -104,25 +107,27 @@ export default function Benefits() {
               {/* Icon */}
               <div
                 className="relative mb-8 flex justify-center items-center"
-                style={{ height: "200px" }}
+                style={{ height: "204px" }}
               >
                 <img
                   src="/icon2.png"
                   alt="3D Document with Checklist"
                   className="object-contain"
                   style={{
-                    width: "180px",
-                    height: "auto",
+                    width: "162px",
+                    height: "204px",
                     transform: "rotate(-4.29deg)",
                     mixBlendMode: "luminosity",
                   }}
                 />
               </div>
 
-              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
+              <h3 className="text-[32px] w-[333px] font-normal text-white mb-2 font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
                 Audit-Ready
               </h3>
-              <h3 className="text-3xl font-normal text-white font-grotesk">Documentation</h3>
+              <h3 className="text-[32px] w-[333px] font-normal text-white mb-2 font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
+                Documentation
+              </h3>
             </div>
           </div>
 
@@ -154,18 +159,20 @@ export default function Benefits() {
                   alt="3D Risk Alert Icon"
                   className="object-contain"
                   style={{
-                    width: "180px",
-                    height: "auto",
+                    width: "152px",
+                    height: "180px",
                     transform: "rotate(8.07deg)",
                     mixBlendMode: "luminosity",
                   }}
                 />
               </div>
 
-              <h3 className="text-3xl font-normal text-white mb-2 font-grotesk">
+              <h3 className="text-[32px] w-[333px] font-normal text-white mb-2 font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
                 Risk Detection &
               </h3>
-              <h3 className="text-3xl font-normal text-white font-grotesk">Red Flag Alerts</h3>
+              <h3 className="text-[32px] w-[333px] font-normal text-white mb-2 font-grotesk tracking-[-0.02em] text-center capitalize leading-[38px]">
+                Red Flag Alerts
+              </h3>
             </div>
           </div>
         </div>

@@ -5,12 +5,7 @@ export default function CTA() {
   return (
     <section className="w-full h-[526px] relative overflow-hidden">
       {/* Background with dark blue gradient and geometric elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-700 to-blue-900 bg-[url('/RnD.png')] bg-cover bg-center">
-        {/* Geometric background elements */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-blue-800/30 to-transparent transform -skew-y-12"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-transparent via-slate-800/30 to-transparent transform skew-y-12"></div>
-        </div>
+      <div className="absolute inset-0 bg-[url('/RnD.png')] bg-cover bg-center">  
       </div>
 
       {/* Content */}
@@ -58,6 +53,7 @@ export default function CTA() {
             padding: "16px 32px",
             height: "76px", // h-19 equivalent (19 * 4 = 76px)
             width: "376px", // w-94 equivalent (94 * 4 = 376px)
+            border: '2.03px solid transparent',
             borderRadius: "9999px",
             boxShadow:
               "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
