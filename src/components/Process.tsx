@@ -77,9 +77,15 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
           {steps.map((step, index) => {
             const cardX = index * 120;
             const cardY = index * 158;
+            // Reverse z-index so the first card (index 0) is on top
+            const zIndex = steps.length - index;
 
             return (
-              <div key={index} className="absolute">
+              <div 
+                key={index} 
+                className="absolute"
+                style={{ zIndex }}
+              >
                 {/* Connector (except last) */}
                 {index < steps.length - 1 && (
                   <div
@@ -87,6 +93,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                     style={{
                       left: `${cardX + 520}px`,
                       top: `${cardY + 60}px`,
+                      zIndex: zIndex - 1, // Connectors behind the cards
                     }}
                   >
                     <svg
@@ -94,9 +101,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                       height="120"
                       viewBox="0 0 140 120"
                       className="text-[#96ED00] mt-[8px]"
-                      
                     >
-                      {/* Curve */}
                       <path
                         d="M10 20 Q73 20 75 80"
                         stroke="currentColor"
@@ -104,13 +109,7 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                         fill="none"
                         strokeLinecap="round"
                       />
-
-                      
-
-                      {/* Single circle at start */}
                       <circle cx="10" cy="20" r="6" fill="currentColor" />
-
-                      {/* Single circle at end */}
                       <circle cx="74" cy="84" r="6" fill="currentColor" />
                     </svg>
                   </div>
@@ -122,11 +121,12 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                     "relative z-10 w-132 h-[171px] rounded-[50px] p-8 gap-[50px] transition-all duration-300 hover:scale-105 shadow-[0px_11px_250px_0px_#000000]",
                     step.isHighlighted
                       ? "bg-[#96ED00] text-gray-900"
-                      : "bg-[#FFFFFF24] text-white"
+                      : "bg-[#FFFFFF24] text-white backdrop-blur-xs"
                   )}
                   style={{
                     left: `${cardX}px`,
                     top: `${cardY}px`,
+                    backgroundColor: step.isHighlighted ? "#96ED00" : "rgba(255, 255, 255, 0.15)",
                   }}
                 >
                   <div className="relative">
