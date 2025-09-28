@@ -97,28 +97,20 @@ export function Process({ steps = defaultSteps, className }: ProcessProps) {
                     >
                       {/* Curve */}
                       <path
-                        d="M10 20 Q90 10 75 80"
+                        d="M10 20 Q73 10 75 80"
                         stroke="currentColor"
                         strokeWidth="6"
                         fill="none"
                         strokeLinecap="round"
                       />
 
-                      {/* Arrowhead */}
-                      <path
-                        d="M70 75 L75 80 L70 85"
-                        stroke="currentColor"
-                        strokeWidth="6"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                      
 
                       {/* Single circle at start */}
                       <circle cx="10" cy="20" r="6" fill="currentColor" />
 
                       {/* Single circle at end */}
-                      <circle cx="75" cy="80" r="6" fill="currentColor" />
+                      <circle cx="74" cy="84" r="6" fill="currentColor" />
                     </svg>
                   </div>
                 )}
