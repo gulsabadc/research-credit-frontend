@@ -62,7 +62,7 @@ export default function Benefits() {
               {/* Icon */}
               <div
                 className="relative mb-8 flex justify-center items-center"
-                style={{ height: "200px" }}
+                
               >
                 <img
                   src="/icon1.png"
@@ -107,7 +107,6 @@ export default function Benefits() {
               {/* Icon */}
               <div
                 className="relative mb-8 flex justify-center items-center"
-                style={{ height: "204px" }}
               >
                 <img
                   src="/icon2.png"
@@ -152,7 +151,6 @@ export default function Benefits() {
               {/* Icon */}
               <div
                 className="relative mb-8 flex justify-center items-center"
-                style={{ height: "200px" }}
               >
                 <img
                   src="/icon3.png"
