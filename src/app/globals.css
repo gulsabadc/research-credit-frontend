@@ -125,13 +125,89 @@
 
 @keyframes shine {
   0% {
-    left: -100%;
+    background-position: 0% 0;
   }
   100% {
-    left: 100%;
+    background-position: 200% 0;
   }
 }
 
 .animate-shine {
-  animation: shine 2s ease-in-out infinite;
+  background: linear-gradient(
+    90deg,
+    #ff0057,
+    #ff7a00,
+    #ffee00,
+    #00ff85,
+    #00cfff,
+    #2900ff,
+    #ff00e0,
+    #ff0057
+  );
+  background-size: 200% 100%;
+  animation: shine 6s linear infinite;
+}
+
+
+
+/* Animatable custom properties for border animation */
+@property --hue {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --bg-x {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --bg-y {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+/* Animated border wrapper */
+.border-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.border-animated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 18px; /* matches the border thickness you set on your image */
+  border-radius: inherit; /* follows rounded-2xl or any radius */
+  background: hsl(0 0% 16%)
+    radial-gradient(
+      30% 30% at calc(var(--bg-x) * 1%) calc(var(--bg-y) * 1%),
+      hsl(calc(var(--hue) * 1deg) 100% 90%) 0%,
+      hsl(calc(var(--hue) * 1deg) 100% 80%) 20%,
+      hsl(calc(var(--hue) * 1deg) 100% 60%) 40%,
+      transparent 100%
+    );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: hue-rotate 6s linear infinite, move-bg 8s linear infinite;
+  z-index: -1;
+}
+
+/* Border animations */
+@keyframes hue-rotate {
+  0%   { --hue: 0; }
+  100% { --hue: 360; }
+}
+
+@keyframes move-bg {
+  0%   { --bg-x: 0; --bg-y: 0; }
+  25%  { --bg-x: 100; --bg-y: 0; }
+  50%  { --bg-x: 100; --bg-y: 100; }
+  75%  { --bg-x: 0; --bg-y: 100; }
+  100% { --bg-x: 0; --bg-y: 0; }
 }
