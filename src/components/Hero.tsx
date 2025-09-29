@@ -1,6 +1,7 @@
-import { Button } from "@/components/global-components/button";
-import { Sparkles, ArrowRight } from "lucide-react";
-import localFont from "next/font/local";
+// import { Button } from "@/components/ui/button"
+import { Sparkles, ArrowRight } from "lucide-react"
+import localFont from "next/font/local"
+import { Button } from "./global-components/button"
 
 const gilroyBold = localFont({
   src: "../fonts/fonts/fonnts.com-Gilroy-Bold.ttf", // adjust path
@@ -8,7 +9,7 @@ const gilroyBold = localFont({
   style: "normal",
   display: "swap",
   variable: "--font-gilroy-bold",
-});
+})
 
 export default function Hero() {
   return (
@@ -25,8 +26,7 @@ export default function Hero() {
                 fontSize: "20px",
                 lineHeight: "32px",
                 letterSpacing: "0%",
-                backgroundColor:
-                  "linear-gradient(90deg, rgba(92, 220, 220, 0.4) 0%, rgba(49, 118, 118, 0.4) 100%)",
+                backgroundColor: "linear-gradient(90deg, rgba(92, 220, 220, 0.4) 0%, rgba(49, 118, 118, 0.4) 100%)",
                 color: "#D6FFFF", // Changed from white to black for better contrast
                 padding: "4px 12px", // Added padding for better appearance
                 borderRadius: "4px", // Optional: for rounded corners
@@ -46,9 +46,7 @@ export default function Hero() {
               <span className="bg-gradient-to-b from-[#96ED00]  to-[#7BC300] bg-clip-text text-transparent">
                 in days,
               </span>{" "}
-              <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
-                not months
-              </span>
+              <span className="bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">not months</span>
             </h1>
           </div>
 
@@ -64,41 +62,40 @@ export default function Hero() {
               letterSpacing: "0%",
             }}
           >
-            CreditPro connects payroll, time, and expenses; explains
-            eligibility; categorizes costs; and generates Form 6765 with an
-            auditor-friendly documentation package.
+            CreditPro connects payroll, time, and expenses; explains eligibility; categorizes costs; and generates Form
+            6765 with an auditor-friendly documentation package.
           </p>
 
           {/* CTA Button */}
-          <Button
-            size="lg"
-            className="border-0"
-            style={{
-              fontFamily: "var(--font-gilroy-bold)",
-              fontWeight: 400,
-              fontSize: "26px",
-              lineHeight: "93.99px",
-              letterSpacing: "-1%",
-              textAlign: "right",
-              background:
-                "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
-              color: "black",
-              padding: "16px 32px",
-              height: "76px", 
-              width: "376px", 
-              borderRadius: "9999px",
-              boxShadow:
-                "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-              transition: "all 0.3s ease",
-            }}
-          >
-            Schedule a demo
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="animated-border-button">
+            <Button
+              size="lg"
+              className="border-0 relative z-10"
+              style={{
+                fontFamily: "var(--font-gilroy-bold)",
+                fontWeight: 400,
+                fontSize: "26px",
+                lineHeight: "93.99px",
+                letterSpacing: "-1%",
+                textAlign: "right",
+                background: "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
+                color: "black",
+                padding: "16px 32px",
+                height: "76px",
+                width: "376px",
+                borderRadius: "9999px",
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              Schedule a demo
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
         </div>
       </div>
 
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-32 bg-gradient-to-t from-cyan-400/20 to-transparent blur-3xl rounded-full"></div>
     </main>
-  );
+  )
 }

@@ -37,32 +37,31 @@ export default function CTA() {
           </p>
         </div>
 
-        <Button
-          size="lg"
-          className="border-0"
-          style={{
-            fontFamily: "var(--font-gilroy-bold)",
-            fontWeight: 400,
-            fontSize: "26px",
-            lineHeight: "93.99px",
-            letterSpacing: "-1%",
-            textAlign: "right",
-            background:
-              "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
-            color: "black",
-            padding: "16px 32px",
-            height: "76px", // h-19 equivalent (19 * 4 = 76px)
-            width: "376px", // w-94 equivalent (94 * 4 = 376px)
-            border: '2.03px solid transparent',
-            borderRadius: "9999px",
-            boxShadow:
-              "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-            transition: "all 0.3s ease",
-          }}
-        >
-          Schedule a demo
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        <div className="animated-border-button">
+            <Button
+              size="lg"
+              className="border-0 relative z-10"
+              style={{
+                fontFamily: "var(--font-gilroy-bold)",
+                fontWeight: 400,
+                fontSize: "26px",
+                lineHeight: "93.99px",
+                letterSpacing: "-1%",
+                textAlign: "right",
+                background: "radial-gradient(43.11% 181.04% at 50% 50%, #96ED00 0%, #93E800 100%)",
+                color: "black",
+                padding: "16px 32px",
+                height: "76px",
+                width: "376px",
+                borderRadius: "9999px",
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              Schedule a demo
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
       </div>
     </section>
   );
