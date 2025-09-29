@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function DashboardPreview() {
   return (
@@ -23,7 +23,7 @@ export default function DashboardPreview() {
         <img
           src="/dashboard.png"
           alt="ResearchHero Dashboard showing RenewAI project with $1,551,251 Federal R&D Credit"
-          className="rounded-2xl shadow-2xl border-[18px] border-[#FFFFFF4D]"
+          className="relative rounded-xl shadow-2xl"
           style={{ width: "1040px", height: "665px" }}
         />
       </div>
