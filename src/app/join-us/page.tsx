@@ -65,7 +65,9 @@ export default function JoinUs() {
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Company Info Section */}
               <div>
-                <h2 className="text-4xl font-[var(--font-gilroy-bold)] text-[#020202] mb-6">
+                <h2 className="text-4xl leading-[66px] text-[#020202] mb-6"
+                style={{ fontFamily: "var(--font-gilroy-bold)" }}
+                >
                   Company Info
                 </h2>
 
@@ -233,7 +235,9 @@ export default function JoinUs() {
 
               {/* Point-of-contact Section */}
               <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                <h2 className="text-4xl font-normal text-[#020202] leading-[66px] mb-6"
+                style={{ fontFamily: "var(--font-gilroy-bold)" }}
+                >
                   Contact Person
                 </h2>
 
