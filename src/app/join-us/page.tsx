@@ -20,6 +20,7 @@ import Footer from "@/components/Footer";
 import { PhoneInput } from "@/components/ui/phone-input";
 import { Button } from "@/components/global-components/button";
 import { Card, CardContent } from "@/components/global-components/card";
+import JoinUsNavigation from "./components/join-us-nav";
 
 export default function JoinUs() {
   const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ export default function JoinUs() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      <JoinUsNavigation />
 
       <div className="max-w-3xl mx-auto px-4 py-12">
         <div className="text-center gap-[28px]">
