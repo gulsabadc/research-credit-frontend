@@ -6,7 +6,7 @@ import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 
 const gilroyBold = localFont({
-  src: "../fonts/fonts/fonnts.com-Gilroy-Bold.ttf", // adjust path
+  src: "../fonts/fonts/fonnts.com-Gilroy-Bold.ttf",
   weight: "400",
 });
 
@@ -16,14 +16,25 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-export default function Navigation() {
+interface NavigationProps {
+  bgColor?: string;
+  className?: string;
+  variant?: "home" | "join-us";
+}
+
+export default function Navigation({ 
+  bgColor = "bg-[#050029]", 
+  className = "",
+  variant = "home"
+}: NavigationProps) {
   return (
-    <header className="container bg-[#050029] mx-auto px-6 py-6 relative z-10">
+    <header className={`container mx-auto px-6 py-6 relative z-10 ${bgColor} ${className}`}>
       <div
-        className="border border-white/20  rounded-lg px-8 py-4 backdrop-blur-sm"
+        className="border border-white/20 rounded-lg px-8 py-4 backdrop-blur-sm"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)",
+          background: variant === "home" 
+            ? "linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 100%)"
+            : "bg-transparent" // Or different style for join-us page
         }}
       >
         <nav className="flex items-center justify-between">
