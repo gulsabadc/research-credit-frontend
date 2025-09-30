@@ -3,14 +3,17 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Button } from "@/components/global-components/button"
+// import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Card, CardContent } from "@/components/global-components/card"
+// import { Card, CardContent } from "@/components/ui/card"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import { PhoneInput } from "@/components/ui/phone-input"
+import { Button } from "@/components/global-components/button"
+import { Card, CardContent } from "@/components/global-components/card"
 
 export default function JoinUs() {
   const [formData, setFormData] = useState({
@@ -36,71 +39,87 @@ export default function JoinUs() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Navbar />
 
-      <div className="max-w-2xl mx-auto px-6 py-12">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Join Us</h1>
-          <p className="text-gray-600">Start Maximizing Your R&D Tax Credits Today</p>
+      <div className="max-w-3xl mx-auto px-4 py-12">
+        <div className="text-center gap-[28px]">
+          <h1 className="font-[var(--font-gilroy-bold)] text-[#020202] not-italic text-[66px] leading-[66px] tracking-[-0.02em] text-center [leading-trim:cap-height]">
+            Join Us
+          </h1>
+          <p className="text-black/80 font-grotesk font-normal text-[26px] leading-[30px]">
+            Start Maximizing Your R&D Tax Credits Today
+          </p>
         </div>
 
-        <Card className="bg-white shadow-sm">
+        <Card className="bg-white border-0">
           <CardContent className="p-8">
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Company Info Section */}
               <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-6">Company Info</h2>
+                <h2 className="text-4xl font-[var(--font-gilroy-bold)] text-[#020202] mb-6">Company Info</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="companyName" className="text-sm font-medium text-gray-700">
-                      Company Name *
+                    <Label htmlFor="companyName" className="text-sm gap-0.5 font-medium text-gray-700">
+                      Company Name
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Input
                       id="companyName"
                       type="text"
                       required
-                      className="mt-1"
+                      className="mt-1 border-[#0002841F]/12"
                       value={formData.companyName}
                       onChange={(e) => handleInputChange("companyName", e.target.value)}
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="ein" className="text-sm font-medium text-gray-700">
-                      EIN *
+                    <Label htmlFor="ein" className="text-sm gap-0.5 font-medium text-gray-700">
+                      EIN
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Input
                       id="ein"
                       type="text"
                       required
-                      className="mt-1"
+                      className="mt-1 border-[#0002841F]/12"
                       value={formData.ein}
                       onChange={(e) => handleInputChange("ein", e.target.value)}
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="website" className="text-sm font-medium text-gray-700">
-                      Website / LinkedIn *
+                    <Label htmlFor="website" className="text-sm gap-0.5 font-medium text-gray-700">
+                      Website / LinkedIn
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Input
                       id="website"
                       type="url"
                       required
-                      className="mt-1"
+                      className="mt-1 border-[#0002841F]/12"
                       value={formData.website}
                       onChange={(e) => handleInputChange("website", e.target.value)}
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="industry" className="text-sm font-medium text-gray-700">
-                      Industry *
+                    <Label htmlFor="industry" className="text-sm gap-0.5 font-medium text-gray-700">
+                      Industry
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Select onValueChange={(value) => handleInputChange("industry", value)}>
-                      <SelectTrigger className="mt-1">
+                      <SelectTrigger className="mt-1 border-[#0002841F]/12">
                         <SelectValue placeholder="Select industry" />
                       </SelectTrigger>
                       <SelectContent>
@@ -115,11 +134,14 @@ export default function JoinUs() {
                   </div>
 
                   <div>
-                    <Label htmlFor="stateOfIncorporation" className="text-sm font-medium text-gray-700">
-                      State Of Incorporation *
+                    <Label htmlFor="stateOfIncorporation" className="text-sm gap-0.5 font-medium text-gray-700">
+                      State Of Incorporation
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Select onValueChange={(value) => handleInputChange("stateOfIncorporation", value)}>
-                      <SelectTrigger className="mt-1">
+                      <SelectTrigger className="mt-1 border-[#0002841F]/12">
                         <SelectValue placeholder="Select state" />
                       </SelectTrigger>
                       <SelectContent>
@@ -139,11 +161,14 @@ export default function JoinUs() {
                   </div>
 
                   <div>
-                    <Label htmlFor="employeeCount" className="text-sm font-medium text-gray-700">
-                      How Many Employees Do You Have? *
+                    <Label htmlFor="employeeCount" className="text-sm gap-0.5 font-medium text-gray-700">
+                      How Many Employees Do You Have?
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Select onValueChange={(value) => handleInputChange("employeeCount", value)}>
-                      <SelectTrigger className="mt-1">
+                      <SelectTrigger className="mt-1 border-[#0002841F]/12">
                         <SelectValue placeholder="Select employee count" />
                       </SelectTrigger>
                       <SelectContent>
@@ -160,47 +185,53 @@ export default function JoinUs() {
 
               {/* Point-of-contact Section */}
               <div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-6">Point-of-contact</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">Contact Person</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="fullName" className="text-sm font-medium text-gray-700">
-                      Full Name *
+                    <Label htmlFor="fullName" className="text-sm gap-0.5 font-medium text-gray-700">
+                      Full Name
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Input
                       id="fullName"
                       type="text"
                       required
-                      className="mt-1"
+                      className="mt-1 border-[#0002841F]/12"
                       value={formData.fullName}
                       onChange={(e) => handleInputChange("fullName", e.target.value)}
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                      Email *
+                    <Label htmlFor="email" className="text-sm gap-0.5 font-medium text-gray-700">
+                      Email
+                      <span className="text-red-500 h-[15px] w-[12px] opacity-60 font-normal text-[22px] leading-8 mb-4 pl-0 ml-0">
+                        *
+                      </span>
                     </Label>
                     <Input
                       id="email"
                       type="email"
                       required
-                      className="mt-1"
+                      className="mt-1 border-[#0002841F]/12"
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
                     />
                   </div>
 
-                  <div className="md:col-span-2">
+                  <div className="md:col-span-1">
                     <Label htmlFor="contactNo" className="text-sm font-medium text-gray-700">
                       Contact No.
                     </Label>
-                    <Input
+                    <PhoneInput
                       id="contactNo"
-                      type="tel"
                       className="mt-1"
                       value={formData.contactNo}
-                      onChange={(e) => handleInputChange("contactNo", e.target.value)}
+                      onChange={(value) => handleInputChange("contactNo", value)}
+                      defaultCountry="US"
                     />
                   </div>
                 </div>
@@ -214,16 +245,18 @@ export default function JoinUs() {
                     checked={formData.agreeToTerms}
                     onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
                   />
-                  <Label htmlFor="terms" className="text-sm text-gray-700">
+                  <Label
+                    htmlFor="terms"
+                    className="text-[16px] font-normal leading-[30px] space-x-0 font-grotesk text-black/80"
+                  >
                     I agree to CreditPro&apos;s{" "}
                     <a href="#" className="text-blue-600 hover:underline">
                       Terms & Conditions
                     </a>{" "}
                     and{" "}
                     <a href="#" className="text-blue-600 hover:underline">
-                      Privacy Policy
+                      Privacy Policy.
                     </a>
-                    .
                   </Label>
                 </div>
 
