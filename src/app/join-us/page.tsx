@@ -322,11 +322,11 @@ export default function JoinUs() {
                     className="text-[16px] font-normal leading-[30px] space-x-0 font-grotesk text-black/80"
                   >
                     I agree to CreditPro&apos;s{" "}
-                    <a href="#" className="text-blue-600 hover:underline">
+                    <a href="#" className="text-[#1D00FF] hover:underline">
                       Terms & Conditions
                     </a>{" "}
                     and{" "}
-                    <a href="#" className="text-blue-600 hover:underline">
+                    <a href="#" className="text-[#1D00FF] hover:underline">
                       Privacy Policy.
                     </a>
                   </Label>
@@ -334,7 +334,7 @@ export default function JoinUs() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#96ED00] hover:bg-[#85d400] text-black font-medium py-3 rounded-lg transition-colors"
+                  className="w-[484px] h-[78px] bg-[#96ED00] hover:bg-[#85d400] text-black font-normal font-main leading-[94px] py-3 rounded-[8px] transition-colors opacity-50"
                   disabled={!formData.agreeToTerms}
                 >
                   Submit →
