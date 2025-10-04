@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 // import { Card, CardContent } from "@/components/ui/card"
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PhoneInput } from "@/components/ui/phone-input";
 import { Button } from "@/components/global-components/button";
@@ -51,8 +50,9 @@ export default function JoinUs() {
 
       <div className="max-w-3xl mx-auto px-4 py-12">
         <div className="text-center gap-[28px]">
-          <h1 className="text-[#020202] not-italic text-[66px] leading-[66px] tracking-[-0.02em] text-center [leading-trim:cap-height]"
-          style={{ fontFamily: "var(--font-gilroy-bold)" }}
+          <h1
+            className="text-[#020202] not-italic text-[66px] leading-[66px] tracking-[-0.02em] text-center [leading-trim:cap-height]"
+            style={{ fontFamily: "var(--font-gilroy-bold)" }}
           >
             Join Us
           </h1>
@@ -66,8 +66,9 @@ export default function JoinUs() {
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Company Info Section */}
               <div>
-                <h2 className="text-4xl leading-[66px] text-[#020202] mb-6"
-                style={{ fontFamily: "var(--font-gilroy-bold)" }}
+                <h2
+                  className="text-4xl leading-[66px] text-[#020202] mb-6"
+                  style={{ fontFamily: "var(--font-gilroy-bold)" }}
                 >
                   Company Info
                 </h2>
@@ -236,8 +237,9 @@ export default function JoinUs() {
 
               {/* Point-of-contact Section */}
               <div>
-                <h2 className="text-4xl font-normal text-[#020202] leading-[66px] mb-6"
-                style={{ fontFamily: "var(--font-gilroy-bold)" }}
+                <h2
+                  className="text-4xl font-normal text-[#020202] leading-[66px] mb-6"
+                  style={{ fontFamily: "var(--font-gilroy-bold)" }}
                 >
                   Contact Person
                 </h2>
@@ -294,21 +296,23 @@ export default function JoinUs() {
                     >
                       Contact No.
                     </Label>
-                    <PhoneInput
-                      id="contactNo"
-                      className="mt-1"
-                      value={formData.contactNo}
-                      onChange={(value) =>
-                        handleInputChange("contactNo", value)
-                      }
-                      defaultCountry="US"
-                    />
+                    <div className="mt-1 relative">
+                      <PhoneInput
+                        id="contactNo"
+                        className="phone-input-container"
+                        value={formData.contactNo}
+                        onChange={(value) =>
+                          handleInputChange("contactNo", value)
+                        }
+                        defaultCountry="US"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Terms and Submit */}
-              <div className="space-y-6">
+              <div className="flex flex-col items-center space-y-6">
                 <div className="flex items-center space-x-2">
                   <Checkbox
                     id="terms"
@@ -322,11 +326,11 @@ export default function JoinUs() {
                     className="text-[16px] font-normal leading-[30px] space-x-0 font-grotesk text-black/80"
                   >
                     I agree to CreditPro&apos;s{" "}
-                    <a href="#" className="text-blue-600 hover:underline">
+                    <a href="#" className="text-[#1D00FF] hover:underline">
                       Terms & Conditions
                     </a>{" "}
                     and{" "}
-                    <a href="#" className="text-blue-600 hover:underline">
+                    <a href="#" className="text-[#1D00FF] hover:underline">
                       Privacy Policy.
                     </a>
                   </Label>
@@ -334,7 +338,7 @@ export default function JoinUs() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#96ED00] hover:bg-[#85d400] text-black font-medium py-3 rounded-lg transition-colors"
+                  className="w-[484px] h-[78px] bg-[#96ED00] hover:bg-[#85d400] text-black font-normal font-main leading-[94px] py-3 rounded-[8px] transition-colors opacity-50"
                   disabled={!formData.agreeToTerms}
                 >
                   Submit →
